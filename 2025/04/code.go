@@ -10,7 +10,7 @@ func main() {
 	aoc.Harness(run)
 }
 
-func findAccessibleRolls(m *utils.Map, alsoRemove bool) int {
+func findAccessibleRolls(m *utils.Map[rune], alsoRemove bool) int {
 	total := 0
 
 	for x := 0; x <= m.GetMaxX(); x++ {
