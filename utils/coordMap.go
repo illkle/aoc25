@@ -44,6 +44,7 @@ func (c *Map[T]) GetMaxY() int {
 }
 
 func (c *Map[T]) Set(x int, y int, value T) {
+
 	if x > c.maxX {
 		c.maxX = x
 	}
